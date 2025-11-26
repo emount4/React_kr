@@ -1,0 +1,104 @@
+.statistics {
+  display: flex;
+  justify-content: center;
+}
+
+.statsCard {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+}
+
+.statsCard h2 {
+  color: #333;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.statItem {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.statItem:hover {
+  transform: translateY(-5px);
+}
+
+.statValue {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #667eea;
+  margin-bottom: 5px;
+}
+
+.statLabel {
+  font-size: 0.9rem;
+  color: #6c757d;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.recentGames h3 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.gameResult {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.gameResult.win {
+  background: #e8f5e8;
+  color: #2e7d32;
+}
+
+.gameResult.lose {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.noGames {
+  text-align: center;
+  color: #6c757d;
+  font-style: italic;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .statsCard {
+    padding: 20px;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  .gameResult {
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+}
